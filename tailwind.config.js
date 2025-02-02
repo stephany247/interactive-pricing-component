@@ -34,7 +34,7 @@ export default {
         "manrope-800": 800,
       },
       backgroundImage: {
-        "custom-bg": "url('./src/assets/images/bg-pattern.svg')",
+        "custom-bg": "url('./bg-pattern.svg')",
         "circles-bg": "url('./src/assets/images/pattern-circles.svg')",
       },
       backgroundSize: {
