@@ -37,13 +37,6 @@ export default {
         "custom-bg": "url('./bg-pattern.svg')",
         "circles-bg": "url('./src/assets/images/pattern-circles.svg')",
       },
-      backgroundSize: {
-        'auto': 'auto',
-        'cover': 'cover',
-        'contain': 'contain',
-        '50%': '50%',
-        '16': '4rem',
-      }
     },
   },
   plugins: [],
