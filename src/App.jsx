@@ -33,6 +33,7 @@ function App() {
         <div className="relative mx-auto my-20">
           <img
             src={circles}
+            alt="circles"
             className="absolute left-1/2 right-1/2 -translate-x-1/2 -top-1/2 sm:-top-3/4 z-0"
           ></img>
           <h1 className="text-neutral-dark-desaturated-blue font-manrope-800 text-xl mb-2 relative z-10">
@@ -44,13 +45,14 @@ function App() {
         </div>
 
         <div className="bg-white shadow-xl my-10 mx-auto rounded-md h-full w-full">
-          <div className="py-6 px-10 mb-2 space-y-8 sm:space-y-0 sm:grid sm:grid-cols-4 sm:grid-rows-3 gap-6 items-center">
-            <p className="uppercase font-manrope-800 mb-2 sm:mb-0 sm:justify-self-start sm:self-center col-start-1 col-end-3 row-start-1 row-end-2">
+          <form className="py-6 px-10 mb-2 space-y-8 sm:space-y-0 sm:grid sm:grid-cols-4 sm:grid-rows-3 gap-6 items-center">
+            <label htmlFor="pageview-range" className="uppercase font-manrope-800 mb-2 sm:mb-0 sm:justify-self-start sm:self-center col-start-1 col-end-3 row-start-1 row-end-2">
               {currentPlan.pageviews} Pageviews
-            </p>
+            </label>
 
             {/* Range Slider */}
             <input
+            id="pageview-range"
               type="range"
               min="0"
               max={pricingData.length - 1}
@@ -98,7 +100,7 @@ function App() {
                 </p>
               </div>
             </label>
-          </div>
+          </form>
 
           <div className="flex flex-col sm:flex-row sm:justify-between sm:gap-28 items-center justify-center gap-6 p-8">
             <div className="space-y-1">
