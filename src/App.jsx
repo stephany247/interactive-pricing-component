@@ -28,7 +28,7 @@ function App() {
     : currentPlan.price.toFixed(2);
 
   return (
-    <div className="font-manrope text-intro relative text-center bg-[url('/bg-pattern.svg')] bg-cover sm:bg-contain  text-neutral-grayish-blue font-manrope-600 text-balance flex flex-col place-content-center">
+    <div className="font-manrope text-intro relative text-center text-neutral-grayish-blue font-manrope-600 text-balance flex flex-col place-content-center">
       <main>
         <div className="relative mx-auto my-20">
           <img
